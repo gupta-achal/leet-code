@@ -8,10 +8,10 @@ class Solution {
             int mid = li + (hi-li)/2;
             int tr = timeRequiredToEatKbananas(piles,mid);
 
-            if(tr <= h){
-                hi = mid-1;
-            }else{
+            if(tr > h){
                 li = mid+1;
+            }else{
+                hi = mid-1;
             }
         }
 
