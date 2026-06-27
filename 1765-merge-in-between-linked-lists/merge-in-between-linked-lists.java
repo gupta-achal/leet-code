@@ -23,10 +23,6 @@ class Solution {
         for(int i=0; i<=b; i++){
             temp_b = temp_b.next;
         }
-        System.out.println(list2_tail.val);
-        System.out.println(temp_a.val);
-        System.out.println(temp_b.val);
-
         temp_a.next = list2;
         list2_tail.next = temp_b;
 
